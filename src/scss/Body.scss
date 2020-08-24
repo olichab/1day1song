@@ -1,0 +1,68 @@
+@import "./helpers/Colors.scss";
+@import "./helpers/Media.scss";
+
+.body-container {
+  overflow-x: hidden;
+  padding-top: 3.5rem;
+
+  @include md {
+    padding-top: 6rem;
+  }
+
+  .img-musician {
+    display: block;
+    height: auto;
+    margin: auto;
+    width: 100%;
+    border-right: solid 2rem $orange;
+
+    @include md {
+      border-right: solid 5rem $orange;
+    }
+
+  }
+
+  .today-card-container {
+    background-color: $white;
+    padding: 2rem;
+
+    @include lg {
+      padding: 4rem;
+    }
+  }
+
+  .title-last-week-img-container {
+    @include md {
+      margin-top: 6rem;
+    }
+
+    h1 {
+      @include md {
+        width: 80%;
+      }
+
+      margin: 0;
+      text-align: left;
+      border-bottom: solid $orange 0.5rem;
+    }
+  }
+
+  .lastweek-cards-container {
+    @include md {
+      padding-top: 3rem;
+    }
+
+    .card-row {
+      overflow-x: scroll;
+      scrollbar-width: none;
+      padding: 3rem;
+    }
+  }
+
+
+  .msg-end {
+    text-align: right;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+}

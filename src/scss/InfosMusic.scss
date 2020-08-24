@@ -1,0 +1,40 @@
+@import "./helpers/Colors.scss";
+@import "./helpers/Media.scss";
+
+.infos-music-container {
+
+  .thumb-album {
+    display: block;
+    height: auto;
+    margin: auto;
+    width: 100%;
+    margin-top: -5rem;
+
+    @include sm {
+      width: 200px;
+      margin-top: auto;
+    }
+  }
+
+
+  .text-infos-music {
+    .title-song {
+      font-weight: 600;
+      font-size: 1.2rem;
+      word-break: break-word;
+    }
+
+    .title-singer,
+    .title-album {
+      font-weight: 300;
+      font-size: 0.9rem;
+      font-style: italic;
+    }
+
+    p {
+      margin-top: 0.75rem !important;
+      color: $dark-grey;
+      flex-wrap: wrap;
+    }
+  }
+}
