@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row, Col, Media, NavLink } from "reactstrap";
+import { Container, Row, Col, Media } from "reactstrap";
 import fetchApiSpotify from "./helpers.js/fetchApiSpotify";
 import iconPlay from "../assets/icons/play_circle_outline_black.svg";
 import iconSpotify from "../assets/icons/logo_spotify.svg";
@@ -52,24 +52,28 @@ const InfosMusic = () => {
               {infos.album} — {infos.year}
             </p>
             {infos.previewUrl && (
-              <NavLink href={infos.previewUrl}>
+              <a href={infos.previewUrl}>
                 <Media
                   object
                   src={iconPlay}
                   className="icon-play"
                   alt="icon play music"
                 />
-              </NavLink>
+              </a>
             )}
             {infos.externalUrl && (
-              <NavLink href={infos.externalUrl} target="_blank">
+              <a
+                href={infos.externalUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Media
                   object
                   src={iconSpotify}
                   className="icon-spotify"
                   alt="icon spotify"
                 />
-              </NavLink>
+              </a>
             )}
           </Col>
         </Row>
