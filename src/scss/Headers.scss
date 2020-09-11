@@ -1,4 +1,4 @@
-@import "./helpers/colors.scss";
+@import "./helpers/Colors.scss";
 @import "./helpers/Media.scss";
 
 .header-container {
@@ -6,7 +6,6 @@
   top: 0;
   background-color: $dark-grey;
   z-index: 100;
-
 
   .logo-1day1song {
     height: auto;
