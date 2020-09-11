@@ -23,9 +23,10 @@
     padding: 0.5rem;
     margin-left: 1rem;
     background-color: rgba($dark-grey, 0.75);
-    color: $orange;
     font-size: 0.75rem;
     font-weight: 600;
+    color: $orange;
+    border-radius: 0 0 0.5rem 0.5rem;
   }
 
   .card-img-top {

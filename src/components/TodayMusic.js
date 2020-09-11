@@ -51,30 +51,34 @@ const InfosMusic = () => {
             <p className="title-album">
               {infos.album} — {infos.year}
             </p>
-            {infos.previewUrl && (
-              <a href={infos.previewUrl}>
-                <Media
-                  object
-                  src={iconPlay}
-                  className="icon-play"
-                  alt="icon play music"
-                />
-              </a>
-            )}
-            {infos.externalUrl && (
-              <a
-                href={infos.externalUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Media
-                  object
-                  src={iconSpotify}
-                  className="icon-spotify"
-                  alt="icon spotify"
-                />
-              </a>
-            )}
+            <Row className="justify-content-end">
+              <Col xs="auto">
+                {infos.previewUrl && (
+                  <a href={infos.previewUrl}>
+                    <Media
+                      object
+                      src={iconPlay}
+                      className="icon-play"
+                      alt="icon play music"
+                    />
+                  </a>
+                )}
+                {infos.externalUrl && (
+                  <a
+                    href={infos.externalUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Media
+                      object
+                      src={iconSpotify}
+                      className="icon-spotify"
+                      alt="icon spotify"
+                    />
+                  </a>
+                )}
+              </Col>
+            </Row>
           </Col>
         </Row>
       )}
