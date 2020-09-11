@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row, Col, Media, NavLink } from "reactstrap";
+import { Container, Row, Col, Media } from "reactstrap";
 import fetchApiSpotify from "./helpers.js/fetchApiSpotify";
 import iconPlay from "../assets/icons/play_circle_outline_black.svg";
 import iconSpotify from "../assets/icons/logo_spotify.svg";

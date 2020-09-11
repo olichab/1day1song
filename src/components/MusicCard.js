@@ -9,7 +9,6 @@ import {
   Row,
   Col,
   Media,
-  NavLink,
 } from "reactstrap";
 import iconPlay from "../assets/icons/play_circle_outline_orange.svg";
 
