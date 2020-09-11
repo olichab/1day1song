@@ -1,0 +1,64 @@
+@import "./helpers/Colors.scss";
+
+.card {
+  border: none !important;
+  background-color: $dark-grey !important;
+  border-radius: 1rem;
+
+  &:hover {
+    .card-body {
+      transform: scale(1.035);
+      transition: all ease-out 0.25s;
+      border-radius: 0.75rem !important;
+    }
+
+    .card-img-top {
+      opacity: 0.5;
+      transition: all ease-out 0.25s;
+    }
+  }
+
+  .card-day {
+    position: absolute;
+    padding: 0.5rem;
+    margin-left: 1rem;
+    background-color: rgba($dark-grey, 0.75);
+    color: $orange;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  .card-img-top {
+    opacity: 1;
+    transition: all ease-out 0.25s;
+    border-radius: 0.75rem 0.75rem 0 0 !important;
+  }
+
+  .card-body {
+    background-color: $white;
+    border-radius: 0 0 0.75rem 0.75rem !important;
+    transition: all ease-out 0.25s;
+
+    .card-title {
+      color: $dark-grey;
+      margin-top: 0.75rem !important;
+      font-weight: 600;
+      font-size: 1rem;
+      word-break: break-word;
+    }
+
+    .card-text {
+      color: $dark-grey;
+      font-weight: 300;
+      font-size: 0.75rem;
+      font-style: italic;
+    }
+
+    .icon-play {
+      display: block;
+      width: 1.75rem;
+      height: 100%;
+      margin: auto;
+    }
+  }
+}

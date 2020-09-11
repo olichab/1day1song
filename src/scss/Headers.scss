@@ -1,0 +1,19 @@
+@import "./helpers/colors.scss";
+@import "./helpers/Media.scss";
+
+.header-container {
+  position: sticky;
+  top: 0;
+  background-color: $dark-grey;
+  z-index: 100;
+
+
+  .logo-1day1song {
+    height: auto;
+    width: 6rem;
+
+    @include md {
+      width: 8rem;
+    }
+  }
+}

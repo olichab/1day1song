@@ -1,0 +1,10 @@
+@import "./helpers/Colors.scss";
+
+.footer-container {
+  font-size: 0.7rem;
+
+  a {
+    color: $white;
+    border-bottom: 1px solid $white;
+  }
+}
