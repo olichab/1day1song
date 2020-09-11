@@ -2,27 +2,16 @@
 @import "./helpers/Media.scss";
 
 .body-container {
-  overflow-x: hidden;
-  padding-top: 3.5rem;
+  // overflow-x: hidden;
 
-  @include md {
-    padding-top: 6rem;
-  }
-
-  .img-musician {
-    display: block;
-    height: auto;
-    margin: auto;
-    width: 100%;
-    border-right: solid 2rem $orange;
-
-    @include md {
-      border-right: solid 5rem $orange;
+  .intro-container {
+    padding: 1.5rem 0 1.5rem 0;
+    @include lg {
+      padding: 4rem 0 4rem 0;
     }
-
   }
 
-  .today-card-container {
+  .today-music-container {
     background-color: $white;
     padding: 2rem;
 
@@ -32,18 +21,27 @@
   }
 
   .title-last-week-img-container {
-    @include md {
-      margin-top: 6rem;
-    }
-
     h1 {
-      @include md {
-        width: 80%;
-      }
-
+      padding: 1rem;
+      border-bottom: solid $orange 0.35rem;
       margin: 0;
       text-align: left;
-      border-bottom: solid $orange 0.5rem;
+      width: 80%;
+
+      @include md {
+        border-bottom: solid $orange 0.5rem;
+      }
+    }
+    .img-musician {
+      display: block;
+      height: auto;
+      margin: auto;
+      width: 100%;
+      border-right: solid 2rem $orange;
+
+      @include md {
+        border-right: solid 5rem $orange;
+      }
     }
   }
 
@@ -59,10 +57,10 @@
     }
   }
 
-
   .msg-end {
     text-align: right;
-    padding: 1rem;
-    margin-top: 2rem;
+    padding: 4rem 1rem 4rem 1rem;
+    margin-top: 1rem;
+    color: $orange;
   }
 }

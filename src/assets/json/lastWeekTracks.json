@@ -1,0 +1,72 @@
+[
+  {
+    "day": "Monday",
+    "title": "I Feel It Coming",
+    "artist": "The Weeknd",
+    "album": "Starboy",
+    "year": "2016",
+    "cover": "https://i.scdn.co/image/ab67616d0000b273a048415db06a5b6fa7ec4e1a",
+    "previewUrl": "",
+    "externalUrl": "https://open.spotify.com/track/3dhjNA0jGA8vHBQ1VdD6vV"
+  },
+  {
+    "day": "Tuesday",
+    "title": "Sky Walker",
+    "artist": "Miguel",
+    "album": "War & Leisure",
+    "year": "2017",
+    "cover": "https://i.scdn.co/image/ab67616d0000b2735e9dff10c31ac14c6c6c920d",
+    "previewUrl": "https://p.scdn.co/mp3-preview/346fef42d6f419f25ce78866478f3d06637b05b4?cid=d5d5da79317d48d2baa8bf77180da72c",
+    "externalUrl": "https://open.spotify.com/track/5WoaF1B5XIEnWfmb5NZikf"
+  },
+  {
+    "day": "Wednesday",
+    "title": "I Lost a Friend",
+    "artist": "FINNEAS",
+    "album": "I Lost a Friend",
+    "year": "2019",
+    "cover": "https://i.scdn.co/image/ab67616d0000b273bab3095cab659556941c2fc7",
+    "previewUrl": "https://p.scdn.co/mp3-preview/dcf6b1340484ec595848fd85e7d70321d359dc7f?cid=d5d5da79317d48d2baa8bf77180da72c",
+    "externalUrl": "https://open.spotify.com/track/49MMefftWPcltNP4OOJGSs"
+  },
+  {
+    "day": "Thursday",
+    "title": "I Love You's",
+    "artist": "Hailee Steinfeld",
+    "album": "Half Written Story",
+    "year": "2020",
+    "cover": "https://i.scdn.co/image/ab67616d0000b273a45eef080f0fbb29368b1bd8",
+    "previewUrl": "",
+    "externalUrl": "https://open.spotify.com/track/60todhJq1ScRkVxFvXTuZF"
+  },
+  {
+    "day": "Friday",
+    "title": "Fishin' in the Dark",
+    "artist": "Nitty Gritty Dirt Band",
+    "album": "Hold On",
+    "year": "1987",
+    "cover": "https://i.scdn.co/image/ab67616d0000b273a547ecc64c2943fc70abb745",
+    "previewUrl": "https://p.scdn.co/mp3-preview/01d0dea7e4e1c2bee8ce657cca0d33a0a9728588?cid=d5d5da79317d48d2baa8bf77180da72c",
+    "externalUrl": "https://open.spotify.com/track/7lJbTVbDEMa3w7NFamrwdq"
+  },
+  {
+    "day": "Saturday",
+    "title": "I Want You to Want Me",
+    "artist": "Cheap Trick",
+    "album": "In Color",
+    "year": "1977",
+    "cover": "https://i.scdn.co/image/ab67616d0000b27357a0bca6d7da93cd0c551f6a",
+    "previewUrl": "https://p.scdn.co/mp3-preview/1c55371ac6dc7f4553e0f0ce75edf9b84d263ef1?cid=d5d5da79317d48d2baa8bf77180da72c",
+    "externalUrl": "https://open.spotify.com/track/1JkZg3eMQTmTn93E8Yd3UL"
+  },
+  {
+    "day": "Sunday",
+    "title": "Just What I Am",
+    "artist": "Kid Cudi",
+    "album": "Indicud",
+    "year": "2013",
+    "cover": "https://i.scdn.co/image/ab67616d0000b273b9ab5cc935d2327a7d2bc629",
+    "previewUrl": "",
+    "externalUrl": "https://open.spotify.com/track/20bJBbPapGQ4bqs0YcA9xY"
+  }
+]

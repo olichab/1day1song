@@ -1,40 +1,34 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { Container, Row, Col, Media } from "reactstrap";
-import InfosMusic from "./InfosMusic";
 import MusicCard from "./MusicCard";
+import Loader from "./Loader";
 import musicPhoto from "../assets/images/Musician.jpg";
-import ThumbAlbum from "../assets/images/Thumb_Abbey_Road.jpg";
-
+import lastWeekTracks from "../assets/json/lastWeekTracks.json";
 import "../scss/Body.scss";
+const TodayMusic = lazy(() => import("./TodayMusic"));
 
 export default function Body() {
-  const days = [
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-    "Sunday",
-  ];
-
   return (
     <>
-      <Container fluid className="body-container">
-        <Row className="mb-5 p-2 p-md-5">
-          <Col xs="12" className="p-2">
-            <h1>
-              Everyday a new <strong>song</strong>
-            </h1>
-          </Col>
-          <Col xs="12" className="p-2">
-            <h2>Discover. Listen. Listen again.</h2>
-          </Col>
-        </Row>
-        <Container className="today-card-container">
+      <Container fluid className="body-container p-0">
+        <Container fluid className="intro-container">
+          <Row className="mb-5">
+            <Col xs="12" className="p-2">
+              <h1>
+                Everyday a new <strong>song</strong>
+              </h1>
+            </Col>
+            <Col xs="12" className="p-2">
+              <h2>Discover. Listen. Listen again.</h2>
+            </Col>
+          </Row>
+        </Container>
+        <Container className="today-music-container">
           <Row className="align-items-center justify-content-center">
             <Col xs="auto">
-              <InfosMusic />
+              <Suspense fallback={<Loader />}>
+                <TodayMusic />
+              </Suspense>
             </Col>
           </Row>
         </Container>
@@ -55,17 +49,30 @@ export default function Body() {
         </Container>
         <Container className="lastweek-cards-container">
           <Row className="card-row flex-nowrap">
-            {days.map((day) => (
-              <Col xs="12" md="6" lg="4">
-                <MusicCard
-                  title="Here comes sun dxkjhjkfjhxhjf fxjfu"
-                  singer="BBBBB"
-                  album="CCCC"
-                  thumbnail={ThumbAlbum}
-                  day={day}
-                />
-              </Col>
-            ))}
+            {lastWeekTracks.map((track) => {
+              const {
+                day,
+                title,
+                artist,
+                album,
+                year,
+                cover,
+                previewUrl,
+              } = track;
+              return (
+                <Col xs="12" md="6" lg="4" key={day}>
+                  <MusicCard
+                    title={title}
+                    artist={artist}
+                    album={album}
+                    year={year}
+                    cover={cover}
+                    day={day}
+                    previewUrl={previewUrl}
+                  />
+                </Col>
+              );
+            })}
           </Row>
         </Container>
         <Container>
