@@ -52,24 +52,28 @@ const InfosMusic = () => {
               {infos.album} — {infos.year}
             </p>
             {infos.previewUrl && (
-              <NavLink href={infos.previewUrl}>
+              <a href={infos.previewUrl}>
                 <Media
                   object
                   src={iconPlay}
                   className="icon-play"
                   alt="icon play music"
                 />
-              </NavLink>
+              </a>
             )}
             {infos.externalUrl && (
-              <NavLink href={infos.externalUrl} target="_blank">
+              <a
+                href={infos.externalUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Media
                   object
                   src={iconSpotify}
                   className="icon-spotify"
                   alt="icon spotify"
                 />
-              </NavLink>
+              </a>
             )}
           </Col>
         </Row>

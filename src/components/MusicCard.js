@@ -31,14 +31,14 @@ const MusicCard = ({ title, artist, album, year, cover, day, previewUrl }) => {
           </Col>
           <Col xs="3" className="p-0">
             {previewUrl && (
-              <NavLink href={previewUrl}>
+              <a href={previewUrl}>
                 <Media
                   object
                   src={iconPlay}
                   className="icon-play"
                   alt="icon play music"
                 />
-              </NavLink>
+              </a>
             )}
           </Col>
         </Row>
